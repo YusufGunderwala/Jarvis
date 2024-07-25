@@ -7,7 +7,7 @@ from groq import Groq
 
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
-newsapi = "728b80510feb4c75b0d64a483bafb761"
+newsapi = "Your API KEY"
 
 
 def speak(text):
@@ -45,7 +45,7 @@ def extract_category(command):
 
 def aiProcess(command):
     client = Groq(
-        api_key="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",)
+        api_key="Your API KEY",)
 
     completion = client.chat.completions.create(
         model="llama3-8b-8192",
